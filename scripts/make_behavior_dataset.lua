@@ -43,7 +43,7 @@ end
 
 
 function save_behavior(filename, data)
-    os.execute( "mkdir -p behaviors" )
+    os.execute( "mkdir -p mpv_annotation" )
     local f = assert(io.open(filename, "w"))
     f:write(data)
     mp.commandv("show-text", 'Saving')
